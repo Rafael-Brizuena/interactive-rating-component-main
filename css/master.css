@@ -1,0 +1,72 @@
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#star{
+    background-color: hsl(216, 12%, 24%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rating{
+    width: 350px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 28px;
+    padding: 25px 30px;
+}
+
+#rating h2{
+    color: hsl(0, 0%, 100%);
+    margin: 25px 0px 8px 0px;
+}
+
+#rating p{
+    color: hsl(217, 12%, 63%);
+    text-align: justify;
+    line-height: 25px;
+}
+
+#rating button{
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 40px;
+    padding: 13px;
+}
+
+#rating-options{
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+
+#rating-options span{
+    background-color: hsl(216, 12%, 24%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rating-options span:hover{
+    background-color: hsl(217, 12%, 63%);
+}
+
+#rating-options span:active{
+    background-color: hsl(25, 97%, 53%);
+    transition: 200ms;
+}
