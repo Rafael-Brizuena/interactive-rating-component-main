@@ -18,25 +18,27 @@ body{
     align-items: center;
 }
 
-#rating{
+#main-box{
     width: 350px;
-    background-color: hsl(213, 19%, 18%);
+    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(213, 20%, 12%));
     border-radius: 28px;
     padding: 25px 30px;
 }
 
-#rating h2{
+/* --- */
+
+#swappable-box-rating h2{
     color: hsl(0, 0%, 100%);
     margin: 25px 0px 8px 0px;
 }
 
-#rating p{
+#swappable-box-rating p{
     color: hsl(217, 12%, 63%);
     text-align: justify;
     line-height: 25px;
 }
 
-#rating button{
+#swappable-box-rating button{
     width: 100%;
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
@@ -45,13 +47,25 @@ body{
     padding: 13px;
 }
 
-#rating-options{
+#swappable-box-rating button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+#swappable-box-rating-options{
     display: flex;
     margin: 30px 0;
     justify-content: space-between;
+    overflow: hidden;
+    flex-direction: row-reverse;
 }
 
-#rating-options span{
+#swappable-box-rating-options > input {
+    display: none;
+}
+
+#swappable-box-rating-options > label {
     background-color: hsl(216, 12%, 24%);
     color: hsl(0, 0%, 100%);
     border-radius: 50%;
@@ -60,13 +74,46 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-#rating-options span:hover{
-    background-color: hsl(217, 12%, 63%);
-}
-
-#rating-options span:active{
+#swappable-box-rating-options > input:not(:checked) ~ label:hover{
     background-color: hsl(25, 97%, 53%);
-    transition: 200ms;
+}
+
+#swappable-box-rating-options > input:checked + label{
+    background-color: hsl(25, 97%, 53%);
+}
+
+/* --- */
+
+#swappable-box-thanx{
+    display: none;
+}
+
+#swappable-box-thanx > *{
+    text-align: center;
+}
+
+#swappable-box-thanx > object{
+    margin: 0 auto;
+}
+
+#swappable-box-thanx h2{
+    color: hsl(0, 0%, 100%);
+}
+
+#swappable-box-thanx p{
+    color: hsl(217, 12%, 63%);
+    line-height: 25px;
+}
+
+#user-rate{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(216, 12%, 24%);
+    padding: 5px 15px;
+    border-radius: 30px;
+    display: table;
+    margin: 22px auto;
 }
